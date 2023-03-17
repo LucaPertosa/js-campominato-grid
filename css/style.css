@@ -50,7 +50,11 @@ img {
 }
 
 .left-nav button {
-    padding: 10px 15px;
+    padding: 0 20px;
+}
+
+#difficulty-level {
+    width: 150px;
 }
 
 /* MAIN */

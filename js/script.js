@@ -2,14 +2,18 @@
 const grid = document.querySelector(".grid");
 // Creo variabile del bottone PLAY
 const createGridButton = document.getElementById('create-grid');
+// Creo variabile per selezionare il menu a tendina della difficoltà
+const difficultySelect = document.getElementById('difficulty-level');
+
 // Assegno al bottone l'event listener con la funzione creata per creare la griglia
 createGridButton.addEventListener('click', createGrid)
 
 
 function createGrid() {
     // Creo ciclo for per creare dinamicamente le box in base al numero indicato e inserisco al loro interno il numero corrispondente
-    if (document.querySelector('.grid').childElementCount > 0) {
+    if (grid.childElementCount > 0) {
         alert('ATTENZIONE! La griglia è già stata creata!');
+        return;
     } else {
         for (let i = 1; i <= 100; i++) {
             const currentNumber = i;
