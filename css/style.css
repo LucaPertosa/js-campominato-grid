@@ -19,7 +19,20 @@ img {
 .jc-sb {
     justify-content: space-between;
 }
+.main-container {
+    width: 100%;
+    min-width: 700px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.active{
+    display: none;
+}
 /* VARIABLES */
+:root {
+    --maincontainer-dimension: 600px
+}
 /* /VARIABLES */
 
 /* HEADER */
@@ -39,3 +52,41 @@ img {
 .left-nav button {
     padding: 10px 15px;
 }
+
+/* MAIN */
+main {
+    /* debug */
+    background-color: green;
+    flex-grow: 1;
+}
+
+main .container {
+    width: var(--maincontainer-dimension);
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(var(--maincontainer-dimension) / 10);
+    height: calc(var(--maincontainer-dimension) / 10);
+    border: 2px solid white;
+}
+
+/* FOOTER */
+footer {
+    height: 60px;
+    display: flex;
+    align-items: center;   
+}
+/* /FOOTER */
