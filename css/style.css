@@ -1,0 +1,41 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* COMMON */
+.flex {
+    display: flex;
+}
+.align-i-c {
+    align-items: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+/* VARIABLES */
+/* /VARIABLES */
+
+/* HEADER */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.logo {
+    width: 100px;
+}
+
+.right-nav h1 {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.left-nav button {
+    padding: 10px 15px;
+}
