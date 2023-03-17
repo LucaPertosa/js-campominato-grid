@@ -31,7 +31,9 @@ img {
 }
 /* VARIABLES */
 :root {
-    --maincontainer-dimension: 600px
+    --maincontainer-dimension: 500px;
+    --number-of-cell: 10;
+    --grid-item-dim: calc(var(--maincontainer-dimension) / var(--number-of-cell));
 }
 /* /VARIABLES */
 
@@ -82,8 +84,8 @@ main .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(var(--maincontainer-dimension) / 10);
-    height: calc(var(--maincontainer-dimension) / 10);
+    width: var(--grid-item-dim);
+    height: var(--grid-item-dim);
     border: 2px solid white;
 }
 
