@@ -18,8 +18,9 @@ function createGrid() {
             // Assegno event listener per colorare il background al click
             newItem.addEventListener("click", handleItemClick)
             grid.append(newItem);
-    }
-}}    
+        };
+    };
+};    
 // FUNCIONS
 
 // DOM related functions
