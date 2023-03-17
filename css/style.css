@@ -83,6 +83,9 @@ main .container {
     border: 2px solid white;
 }
 
+.grid-item.clicked {
+    background-color: lightblue;
+}
 /* FOOTER */
 footer {
     height: 60px;
